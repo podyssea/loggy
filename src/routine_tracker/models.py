@@ -4,3 +4,4 @@ from django.db import models
 class Workout(models.Model):
     title = models.TextField()
     content = models.TextField(null=True, blank=True)
+    slug = models.SlugField(unique=True)

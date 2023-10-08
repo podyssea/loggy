@@ -21,7 +21,7 @@ from routine_tracker.views import workout_details_page
 urlpatterns = [
     path("loggy-admin/", admin.site.urls),
     # path("workout/", workout_details_page),
-    path("workout/<int:workout_id>/", workout_details_page),
+    path("workout/<str:slug>/", workout_details_page),
     path("", home_page),
     path("about/", about_page),
     path("contact/", contact_page)
